@@ -1,0 +1,13 @@
+{
+    "also see": "What is related or similar to {}?",
+    "derivationally related form": "What word or concept leads to {}?",
+    "has part": "What includes {} as a part?",
+    "hypernym": "What is a example or specific instance of {}?",
+    "instance hypernym": "What entity is classified under {}?",
+    "member meronym": "What larger group does {} belong to?",
+    "member of domain region": "What is associated with the region of {}?",
+    "member of domain usage": "What is used in the same context as {}?",
+    "similar to": "What is considered similar to {}?",
+    "synset domain topic of": "What is associated with the field or topic of {}?",
+    "verb group": "What other verb is in the same functional or semantic group as {}?"
+}
