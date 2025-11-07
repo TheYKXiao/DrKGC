@@ -1,8 +1,8 @@
 # DrKGC
 This repository contains the code for the paper:  
 **"	DrKGC: Dynamic Subgraph Retrieval-Augmented LLMs for Knowledge Graph Completion across General and Biomedical Domains"**  
-<!-- [[Paper Link]](https://arxiv.org/abs/xxxx.xxxxx) | [[EMNLP Anthology]](https://aclanthology.org/xxxx) -->
-
+*Accepted at EMNLP Findings 2025.*
+[[arXiv Link]](https://arxiv.org/abs/2506.00708) | [[ACL Anthology]](https://aclanthology.org/2025.findings-emnlp.892/)
 
 ## Requirements
 **Note:** Please install the appropriate PyTorch and DGL version with CUDA support. 
@@ -53,10 +53,27 @@ python infer.py --dataset_path "dataset/fb15k237" --kge_embedding_path "dataset/
 ## Citation
 If you use this code, please cite our paper:
 ```bibtex
-@article{xiao2025drkgc,
-  title={DrKGC: Dynamic Subgraph Retrieval-Augmented LLMs for Knowledge Graph Completion across General and Biomedical Domains},
-  author={Xiao, Yongkang and Zhang, Sinian and Dai, Yi and Zhou, Huixue and Hou, Jue and Ding, Jie and Zhang, Rui},
-  journal={arXiv preprint arXiv:2506.00708},
-  year={2025}
+@inproceedings{xiao-etal-2025-drkgc,
+    title = "{D}r{KGC}: Dynamic Subgraph Retrieval-Augmented {LLM}s for Knowledge Graph Completion across General and Biomedical Domains",
+    author = "Xiao, Yongkang  and
+      Zhang, Sinian  and
+      Dai, Yi  and
+      Zhou, Huixue  and
+      Hou, Jue  and
+      Ding, Jie  and
+      Zhang, Rui",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.892/",
+    pages = "16432--16445",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Knowledge graph completion (KGC) aims to predict missing triples in knowledge graphs (KGs) by leveraging existing triples and textual information. Recently, generative large language models (LLMs) have been increasingly employed for graph tasks. However, current approaches typically encode graph context in textual form, which fails to fully exploit the potential of LLMs for perceiving and reasoning about graph structures. To address this limitation, we propose DrKGC (Dynamic Subgraph Retrieval-Augmented LLMs for Knowledge Graph Completion). DrKGC employs a flexible lightweight model training strategy to learn structural embeddings and logical rules within the KG. It then leverages a novel bottom-up graph retrieval method to extract a subgraph for each query guided by the learned rules. Finally, a graph convolutional network (GCN) adapter uses the retrieved subgraph to enhance the structural embeddings, which are then integrated into the prompt for effective LLM fine-tuning. Experimental results on two general domain benchmark datasets and two biomedical datasets demonstrate the superior performance of DrKGC. Furthermore, a realistic case study in the biomedical domain highlights its interpretability and practical utility."
 }
 ```
